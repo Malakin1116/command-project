@@ -187,6 +187,8 @@ body {
         color: #000000;
         text-align: start;
        display: block;
+       padding-bottom: 8px;
+
     }
     .buy-now-per-info-name-div {
         display: flex;
@@ -205,14 +207,10 @@ body {
       width: 100%;
     }
     .buy-now-form-comment {
-      width: 100%;
-      min-height: 91px;
-      border: 1.5px solid rgba(17, 17, 17, 0.05);
-      filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
-      border-radius: 8px;
     }
     
     .contact-from-message {
+      position: relative;
       width: 100%;
       min-height: 91px;
       font-size: 14px;
