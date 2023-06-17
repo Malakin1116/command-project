@@ -1,0 +1,301 @@
+
+:root {
+    --main-font-family: 'Montserrat' sans-serif;
+    --primary-text-color-theme-light: #111111;
+    --primary-text-color-theme-dark: #ffffff;
+    --accent-color-orange: #fd9222;
+    --bg-color-dark-purple: #1e1823;
+    --secondary-bg-color: #fcf1e0;
+  }
+  
+
+/* reset */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  color: currentColor;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  font-family: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  font-family: var(--main-font-family);
+}
+
+.section {
+  padding-top: 128px;
+  padding-bottom: 128px;
+}
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 32px;
+  padding-left: 32px;
+}
+
+.visually-hidden {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+}
+
+/* добавити в рут колір #FAFAFA and #000000*/
+
+/* start */
+
+.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}  
+.buy-now-backdrop {
+    opacity: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(46, 47, 66, 0.4);
+    visibility: visible;
+    pointer-events: auto;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    .buy-now-modal {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        background-color: #FAFAFA;
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 14px;
+        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        padding: 32px 24px 32px 24px;
+        pointer-events: auto;
+    }
+    .is-hidden {
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+  }  
+    .buy-now-form-modal-window-header {
+       font-family: var(--main-font-family);
+       font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 1.2;
+        letter-spacing: -0.03em;
+        color: var(--accent-color-orange);
+        text-align: center;
+        margin: 0 auto 32px auto;
+    }
+    .buy-now-form-modal-window-header-span {
+        color: var(--primary-text-color-theme-light);
+    }
+    .buy-now-form-modal-window-list {
+        display: flex;
+        gap: 8px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .buy-now-form-modal-window-row {
+        width: 100%;
+        height: 83px;
+        display: flex;
+        justify-content: space-between;
+        border: 1px solid rgba(17, 17, 17, 0.1);
+        border-radius: 15px;
+        background-color: var(--primary-text-color-theme-dark);
+        align-items: center;
+    }
+
+    .buy-now-img-prod {
+        width: 84px;
+        height: 69px;
+        margin: 8px auto 8px 16px;
+    }
+
+    .buy-now-img-btg {
+        border: 1px solid rgba(17, 17, 17, 0.1);
+        border-radius: 100px;
+        width: 73px;
+        height: 29px;
+        margin: 28px 16px 28px auto;
+    }
+    .buy-now-img-span {
+        font-family: var(--main-font-family);
+       font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 1.21;
+        letter-spacing: -0.03em;
+        color: var(--primary-text-color-theme-light);
+        text-align: center;
+    }
+    .modal-contact-form {
+        width: 100%;
+      padding-top: 32px ;
+    }
+    .buy-now-per-info {
+        font-family: var(--main-font-family);
+       font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 1.22;
+        letter-spacing: 0.02em;
+        color: #000000;
+        text-align: start;
+       display: block;
+    }
+    .buy-now-per-info-name-div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 18px;
+    } 
+    .buy-now-per-info-name-name {      
+      width: 100%;
+      height: 45px;
+      border: 1.5px solid rgba(17, 17, 17, 0.05);
+      filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
+      border-radius: 8px;
+    }
+    .buy-now-form-personal-information {
+      width: 100%;
+    }
+    .buy-now-form-comment {
+      width: 100%;
+      min-height: 91px;
+      border: 1.5px solid rgba(17, 17, 17, 0.05);
+      filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
+      border-radius: 8px;
+    }
+    
+    .contact-from-message {
+      width: 100%;
+      min-height: 91px;
+      font-size: 14px;
+      padding: 8px 16px;
+      line-height: 1.21;
+      letter-spacing: 0.03em;
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      padding: 14px 18px 60px;
+      gap: 40px;
+      border: 1.5px solid rgba(17, 17, 17, 0.05);
+      filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
+      border-radius: 8px;
+    }
+    .buy-now-form-btn-submit {
+      border: none;
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      margin-top: 18px;
+      padding: 12px 28px;
+      background-color: var(--accent-color-orange);
+      color: var(--primary-text-color-theme-dark);
+      border-radius: 100px;
+    }
+    .buy-now-form-btn-submit-span {
+      font-family: var(--main-font-family);
+      font-style: normal;
+       font-weight: 600;
+       font-size: 14px;
+       line-height: 1.21;
+    }
+    
+
+
+
+
+
+    .buy-now-modal-class-button {
+        position: absolute;
+        top: 24px;
+        right: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 24px;
+        height: 24px;
+        padding: 0;
+        background-color: transparent;
+        border-radius: 50%;
+        background-color: #e7e9fc;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+
+    .phone-input-addon {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        margin-right: 10px;
+    }
+    .phone-addon-text {
+        position: absolute;
+        margin-right: 5px;
+    }
+    .vertical-line {
+        position: absolute;
+        height: 15px;
+        width: 1px;
+        background-color: black;
+        margin-left: 5px;
+        margin-right: 5px;
+    } 
+}
+
+@media screen and (min-width: 375px) and (max-width: 767px) {
+    .buy-now-modal {
+        position: absolute;
+        width: 375px;
+        min-height: 584px;
+        padding: 32px 24px 32px 24px;
+        }
+}
