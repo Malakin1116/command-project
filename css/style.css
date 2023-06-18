@@ -188,7 +188,7 @@ body {
         text-align: start;
        display: block;
        padding-bottom: 8px;
-
+       padding-top: 18px;
     }
     .buy-now-per-info-name-div {
         display: flex;
@@ -211,9 +211,17 @@ body {
       line-height: 1.21;
       padding-left: 18px;
     }
+    .buy-now-per-info-name-name:hover,
+    .buy-now-per-info-name-name:focus {
+      outline: none;
+      filter: none;
+    }
     .buy-now-per-info-name-tel {      
       width: 100%;
       height: 45px;
+      font-family: var(--main-font-family);
+      font-size: 14px;
+      line-height: 1.21;
       border: 1.5px solid rgba(17, 17, 17, 0.05);
       filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
       border-radius: 8px;
@@ -221,26 +229,32 @@ body {
       background-color: transparent;
       padding-left: 106px;
     }
-
+    .buy-now-per-info-name-tel:hover,
+    .buy-now-per-info-name-tel:focus {
+      outline: none;
+      filter: none;
+    }
     .buy-now-form-personal-information {
       width: 100%;
     }
-    .buy-now-form-comment {
-    }
-    
-    .contact-from-message {
+    .buy-now-contact-from-message {
       position: relative;
       width: 100%;
       min-height: 91px;
+      font-family: var(--main-font-family);
       font-size: 14px;
       line-height: 1.21;
-      letter-spacing: 0.03em;
-      padding: 14px 18px 60px;
+      padding: 14px 178px 60px 18px ;
       border: 1.5px solid rgba(17, 17, 17, 0.05);
       filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
       border-radius: 8px;
       outline: transparent;
       resize: none;
+    }
+    .buy-now-contact-from-message:hover,
+    .buy-now-contact-from-message:focus {
+      outline: none;
+      filter: none;
     }
     .buy-now-form-btn-submit {
       border: none;
@@ -293,11 +307,7 @@ body {
      margin-right: 8px;
     
     }
-    
-
-
-
-
+  
     .buy-now-modal-class-button {
         position: absolute;
         top: 24px;
@@ -316,25 +326,6 @@ body {
         transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
-
-    .phone-input-addon {
-        position: absolute;
-        display: flex;
-        align-items: center;
-        margin-right: 10px;
-    }
-    .phone-addon-text {
-        position: absolute;
-        margin-right: 5px;
-    }
-    .vertical-line {
-        position: absolute;
-        height: 15px;
-        width: 1px;
-        background-color: black;
-        margin-left: 5px;
-        margin-right: 5px;
-    } 
 }
 
 @media screen and (min-width: 375px) and (max-width: 767px) {
@@ -344,4 +335,22 @@ body {
         min-height: 584px;
         padding: 32px 24px 32px 24px;
         }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1199px) {
+  .buy-now-modal {
+    position: absolute;
+    width: 768px;
+    min-height: 584px;
+    padding: 32px 24px 32px 24px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+  .buy-now-modal {
+    position: absolute;
+    width: 1200px;
+    min-height: 584px;
+    padding: 32px 24px 32px 24px;
+    }
 }
