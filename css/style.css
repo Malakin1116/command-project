@@ -84,18 +84,18 @@ body {
 /* start */
 
 
-    .buy-now-backdrop {
-    opacity: 1;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-    height: 100%;
-    background-color: rgba(46, 47, 66, 0.4);
-    visibility: visible;
-    pointer-events: auto;
-    }
+      .buy-now-backdrop {
+        opacity: 1;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        height: 100%;
+        background-color: rgba(46, 47, 66, 0.4);
+        visibility: visible;
+        pointer-events: auto;
+      }
     .buy-now-modal {
         position: absolute;
         top: 50%;
@@ -109,16 +109,16 @@ body {
         padding: 32px 24px 32px 24px;
         pointer-events: auto;
         overflow: auto; 
-    }
-    .is-hidden {
-      opacity: 0;
-      visibility: hidden;
-      pointer-events: none;
-  }  
-  .buy-now-modal-close-icon {
-    width: 12px;
-    height: 12px;
-  }
+      }
+      .is-hidden {
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+      }  
+      .buy-now-modal-close-icon {
+        width: 12px;
+        height: 12px;
+      }
     .buy-now-form-modal-window-header {
        font-family: var(--main-font-family);
        font-style: normal;
@@ -149,13 +149,11 @@ body {
         background-color: var(--primary-text-color-theme-dark);
         align-items: center;
     }
-
     .buy-now-img-prod {
         width: 84px;
         height: 69px;
         margin: 8px auto 8px 16px;
     }
-
     .buy-now-img-btg {
         border: 1px solid rgba(17, 17, 17, 0.1);
         border-radius: 100px;
@@ -275,7 +273,7 @@ body {
        font-size: 14px;
        line-height: 1.21;
     }
-    .contact-form-input-wraper {
+    .buy-now-contact-form-input-wraper {
       position: relative;
     }
     .buy-now-form-class-span {
@@ -341,7 +339,7 @@ body {
 }
 }
 
-/* table */
+/* table and desktop*/
 @media screen and (min-width: 767px)  {
   .buy-now-modal {
     width: 609px;
@@ -414,15 +412,14 @@ body {
   margin-right: 18px;
     width: 32px;
     height: 24px;
-   }
- 
- .buy-now-per-info-name-name {      
+}
+.buy-now-per-info-name-name {      
   height: 66px;
   padding-left: 24px;
   font-size: 18px;
   line-height: 1.22;
 }
- .buy-now-per-info-name-tel {      
+.buy-now-per-info-name-tel {      
   height: 66px;
   padding-left: 177px;
   font-size: 18px;
