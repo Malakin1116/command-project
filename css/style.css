@@ -202,7 +202,26 @@ body {
       border: 1.5px solid rgba(17, 17, 17, 0.05);
       filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
       border-radius: 8px;
+      outline: transparent;
+      background-color: transparent;
+      font-family: var(--main-font-family);
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 1.21;
+      padding-left: 18px;
     }
+    .buy-now-per-info-name-tel {      
+      width: 100%;
+      height: 45px;
+      border: 1.5px solid rgba(17, 17, 17, 0.05);
+      filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
+      border-radius: 8px;
+      outline: transparent;
+      background-color: transparent;
+      padding-left: 106px;
+    }
+
     .buy-now-form-personal-information {
       width: 100%;
     }
@@ -214,17 +233,14 @@ body {
       width: 100%;
       min-height: 91px;
       font-size: 14px;
-      padding: 8px 16px;
       line-height: 1.21;
       letter-spacing: 0.03em;
-      display: flex;
-      flex-direction: row;
-      align-items: flex-start;
       padding: 14px 18px 60px;
-      gap: 40px;
       border: 1.5px solid rgba(17, 17, 17, 0.05);
       filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
       border-radius: 8px;
+      outline: transparent;
+      resize: none;
     }
     .buy-now-form-btn-submit {
       border: none;
@@ -244,8 +260,40 @@ body {
        font-size: 14px;
        line-height: 1.21;
     }
+    .contact-form-input-wraper {
+      position: relative;
+    }
+    .buy-now-form-class-span {
+      font-family: var(--main-font-family);
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1.21;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    .buy-now-form-class-span::after {
+      content: "";
+      position: absolute;
+      margin-left: 8px;
+      height: 15px;
+      width: 1px;
+      background-color: rgba(64, 64, 64, 0.3);
+      
+    }
+    .buy-now-div-for-icon {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      margin-left:  18px;
+    }
+    .buy-now-form-class-svg {
+     margin-top: 4.29px;
+     margin-right: 8px;
     
-
+    }
+    
 
 
 
