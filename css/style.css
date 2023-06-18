@@ -311,12 +311,13 @@ body {
      margin-right: 8px;
     
     }
-    .icon-bank {
+    .buy-now-icon-bank {
       position: absolute;
       width: 32px;
       height: 21px;
       top: 50%;
       transform: translateY(-50%);
+      right: 14px;
     }
   
     .buy-now-modal-class-button {
