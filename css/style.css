@@ -292,7 +292,7 @@ body {
       content: "";
       position: absolute;
       margin-left: 8px;
-      height: 15px;
+      height: 32px;
       width: 1px;
       background-color: rgba(64, 64, 64, 0.3);
       
@@ -343,5 +343,66 @@ body {
   .buy-now-modal {
     width: 609px;
 }
+.buy-now-modal {
+  padding: 48px;
+}
+.buy-now-form-modal-window-header {
+   font-size: 24px;
+   line-height: 1.17;
+}
+.buy-now-form-modal-window-list {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+.buy-now-form-modal-window-row {
+  width: 160px;
+  row-gap: 14px;
+  height: 196px;
+  flex-direction: column;
+  justify-content: center;
+}
+.buy-now-img-prod {
+  width: 120px;
+  height: 107px;
+  margin: 0;
+}
+.buy-now-img-prod-pic {
+  width: 120px;
+  height: 107px;
+  margin: 24px 20px auto 20px;
+}
+.buy-now-img-btg {
+  width: 96px;
+  height: 33px;
+  margin: auto 32px 18px 32px;
+}
+.buy-now-per-info-name-div {
+  flex-direction: row;
+  gap: 21px;
+}
+.buy-now-div-for-icon {
+  margin-left:  24px;
+}
+.buy-now-form-class-span::after {
+  content: "";
+  margin-left: 32px;
+}
+.buy-now-form-class-svg {
+  margin-right: 32px;
+ 
+ }
+ .buy-now-per-info-name-name {      
+  height: 66px;
+  padding-left: 24px;
+}
+ .buy-now-per-info-name-tel {      
+  height: 66px;
+  padding-left: 177px;
+}
+.buy-now-contact-from-message {
+  min-height: 137px;
+  padding-left: 24px;
+  
 }
 
