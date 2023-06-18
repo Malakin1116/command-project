@@ -259,14 +259,14 @@ body {
     }
     .buy-now-form-btn-submit {
       border: none;
-      display: flex;
-      flex-direction: row;
-      align-items: flex-start;
+      width: 117px;
+      height: 45px;
       margin-top: 18px;
       padding: 12px 28px;
       background-color: var(--accent-color-orange);
       color: var(--primary-text-color-theme-dark);
       border-radius: 100px;
+      
     }
     .buy-now-form-btn-submit-span {
       font-family: var(--main-font-family);
@@ -291,9 +291,11 @@ body {
     .buy-now-form-class-span::after {
       content: "";
       position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
       margin-left: 8px;
-      height: 32px;
-      width: 1px;
+      height: 25px;
+      width: 2px;
       background-color: rgba(64, 64, 64, 0.3);
       
     }
@@ -304,9 +306,10 @@ body {
       margin-left:  18px;
     }
     .buy-now-form-class-svg {
-     margin-top: 4.29px;
+      margin-top: 4px; 
      margin-right: 8px;
-    
+     width: 24px;
+     height: 18px;
     }
     .buy-now-icon-bank {
       position: absolute;
@@ -343,6 +346,16 @@ body {
   .buy-now-modal {
     width: 609px;
 }
+.buy-now-modal-class-button {
+  top: 24px;
+  right: 24px;
+  width: 28px;
+  height: 28px;
+}
+.buy-now-modal-close-icon {
+  width: 14px;
+  height: 14px;
+}
 .buy-now-modal {
   padding: 48px;
 }
@@ -377,6 +390,10 @@ body {
   height: 33px;
   margin: auto 32px 18px 32px;
 }
+.buy-now-per-info {
+  font-size: 14px;
+  line-height: 1.29;
+}
 .buy-now-per-info-name-div {
   flex-direction: row;
   gap: 21px;
@@ -384,25 +401,42 @@ body {
 .buy-now-div-for-icon {
   margin-left:  24px;
 }
+.buy-now-form-class-span {
+  font-size: 18px;
+  line-height: 1.22;
+}
 .buy-now-form-class-span::after {
   content: "";
+  height: 32px;
   margin-left: 32px;
 }
 .buy-now-form-class-svg {
-  margin-right: 32px;
+  margin-right: 18px;
+    width: 32px;
+    height: 24px;
+   }
  
- }
  .buy-now-per-info-name-name {      
   height: 66px;
   padding-left: 24px;
+  font-size: 18px;
+  line-height: 1.22;
 }
  .buy-now-per-info-name-tel {      
   height: 66px;
   padding-left: 177px;
+  font-size: 18px;
+  line-height: 1.22;
 }
 .buy-now-contact-from-message {
   min-height: 137px;
   padding-left: 24px;
-  
+  font-size: 18px;
+  line-height: 1.22;
 }
-
+.buy-now-form-btn-submit {
+  width: 117px;
+  height: 45px;
+  padding:  14px 40px 14px 40px;
+}
+}
