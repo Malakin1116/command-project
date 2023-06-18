@@ -30,35 +30,85 @@
             <h1 class="buy-now-form-modal-window-header">BUY <span class="buy-now-form-modal-window-header-span">NOW</span></h1>
             <ul class="buy-now-form-modal-window-list">
                 <li class="buy-now-form-modal-window-row"> 
-                    <!-- розібраться як через сss  -->
-                    <img class="buy-now-img-prod" 
-                    src="./img/buy-now-modal/buy01-mob@1x.jpg" 
-                    srcset="./img/buy-now-modal/buy01-mob@1x.jpg 1x, ./img/buy-now-modal/buy01-mob@2x.jpg 2x"
-                    alt="piece"
-                    height="107"
-                    width="120">
+                    <picture>
+                        <source
+                          srcset="
+                          ./img/buy-now-modal/buy01-desktop@1x.jpg 1x,
+                          ./img/buy-now-modal/buy01-desktop@2x.jpg 2x
+                            "
+                          media="(min-width: 768px) "
+                        />
+                        <source
+                          srcset="
+                          ./img/buy-now-modal/buy01-mob@1x.jpg 1x,
+                          ./img/buy-now-modal/buy01-mob@2x.jpg 2x
+                             "
+                          media="(min-width: 320px) "
+                        />
+                        <img
+                          class="buy-now-img-prod"
+                          src="../img/buy-now-modal/buy01-mob@1x.jpg"
+                          alt="piece"
+                          width="107"
+                          height="120"
+                        />
+                      </picture>
                     <button class="buy-now-img-btg">
                         <span class="buy-now-img-span">100 g</span>
                     </button>
                 </li>
                 <li class="buy-now-form-modal-window-row">
-                    <img class="buy-now-img-prod" 
-                    src="./img/buy-now-modal/buy02-mob@1x.jpg" 
-                    srcset="./img/buy-now-modal/buy02-mob@1x.jpg 1x, ./img/buy-now-modal/buy02-mob@2x.jpg 2x"
-                    alt="piece"
-                    height="107"
-                    width="120">
+                    <picture>
+                        <source
+                          srcset="
+                            ./img/buy-now-modal/buy02-desktop@1x.jpg 1x,
+                            ./img/buy-now-modal/buy02-desktop@2x.jpg 2x
+                            "
+                          media="(min-width: 768px) "
+                        />
+                        <source
+                          srcset="
+                          ./img/buy-now-modal/buy02-mob@1x.jpg 1x,
+                          ./img/buy-now-modal/buy02-mob@2x.jpg 2x
+                             "
+                          media="(min-width: 320px) "
+                        />
+                        <img
+                          class="buy-now-img-prod"
+                          src="../img/buy-now-modal/buy02-mob@1x.jpg"
+                          alt="piece"
+                          width="107"
+                          height="120"
+                        />
+                    </picture>
                     <button class="buy-now-img-btg">
                         <span class="buy-now-img-span">200 g</span>
                     </button>
                 </li>
                 <li class="buy-now-form-modal-window-row">
-                    <img class="buy-now-img-prod" 
-                    src="./img/buy-now-modal/buy03-mob@1x.jpg" 
-                    srcset="./img/buy-now-modal/buy03-mob@1x.jpg 1x, ./img/buy-now-modal/buy03-mob@2x.jpg 2x"
-                    alt="piece"
-                    height="107"
-                    width="120">
+                    <picture>
+                        <source
+                          srcset="
+                            ./img/buy-now-modal/buy03-desktop@1x.jpg 1x,
+                            ./img/buy-now-modal/buy03-desktop@2x.jpg 2x
+                            "
+                          media="(min-width: 768px) "
+                        />
+                        <source
+                          srcset="
+                          ./img/buy-now-modal/buy03-mob@1x.jpg 1x,
+                          ./img/buy-now-modal/buy03-mob@2x.jpg 2x
+                             "
+                          media="(min-width: 320px) "
+                        />
+                        <img
+                          class="buy-now-img-prod"
+                          src="../img/buy-now-modal/buy03-mob@1x.jpg"
+                          alt="piece"
+                          width="107"
+                          height="120"
+                        />
+                    </picture>
                     <button class="buy-now-img-btg">
                         <span class="buy-now-img-span">300 g</span>
                     </button>
